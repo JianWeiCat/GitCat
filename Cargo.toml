@@ -5,7 +5,7 @@ edition = "2021"
 rust-version = "1.85"
 description = "纯 Rust 跨平台 Git 仓库增强工具箱"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/xxx/git-helper"
+repository = "https://github.com/JianWeiCat/Git-Helper"
 readme = "README.md"
 
 [[bin]]
