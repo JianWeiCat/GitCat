@@ -28,9 +28,9 @@ walkdir = "2"
 rayon = "1"
 
 # Terminal UI
-indicatif = "0.17"
-console = "0.15"
-colored = "2"
+indicatif = { version = "0.17", optional = true }
+console = { version = "0.15", optional = true }
+colored = { version = "2", optional = true }
 tabled = "0.17"
 
 # Serialization
@@ -74,6 +74,6 @@ panic = "abort"
 [features]
 default = ["tui-progress", "color"]
 tui-progress = ["indicatif", "console"]
-color = ["colored", "tabled/color"]
+color = ["colored"]
 remote = []
 audit-log = []

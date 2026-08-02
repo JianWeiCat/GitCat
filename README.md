@@ -25,33 +25,46 @@ gh --help
 gh stats
 
 # 按作者 + 时间段过滤
-gh stats --author "Zhang" --since "2026-01-01"
+gh stats --author “Zhang” --since “2026-01-01”
 
 # 清理已合并分支（先预演，安全！）
 gh branch cleanup --dry-run
 
 # 批量检查多仓库状态
 gh multi status --root ~/projects
-功能模块
-命令	功能
-gh stats	贡献统计（代码行数、作者排行、报表导出）
-gh branch	分支管理（清理、切换、重命名、休眠检测）
-gh log	彩色精简日志
-gh reset	安全重置（软/混合/硬，自动备份）
-gh stash	Stash 批量管理
-gh multi	多仓库批量运维（pull / gc / status）
-gh audit	操作审计日志
-技术栈
-语言：Rust 2021 Edition
-Git 底层：gix (gitoxide) — 纯 Rust 实现
-CLI：clap v4
-并发：rayon
-平台：Windows / macOS / Linux (x86_64 + aarch64)
-开发
+```
 
+## 功能模块
+
+| 命令 | 功能 |
+|------|------|
+| `gh stats` | 贡献统计（代码行数、作者排行、报表导出） |
+| `gh branch` | 分支管理（清理、切换、重命名、休眠检测） |
+| `gh log` | 彩色精简日志 |
+| `gh reset` | 安全重置（软/混合/硬，自动备份） |
+| `gh stash` | Stash 批量管理 |
+| `gh multi` | 多仓库批量运维（pull / gc / status） |
+| `gh audit` | 操作审计日志 |
+
+## 技术栈
+
+| 层面 | 选型 |
+|------|------|
+| 语言 | Rust 2021 Edition |
+| Git 底层 | gix (gitoxide) — 纯 Rust 实现 |
+| CLI | clap v4 |
+| 并发 | rayon |
+| 平台 | Windows / macOS / Linux (x86_64 + aarch64) |
+
+## 开发
+
+```bash
 git clone https://github.com/JianWeiCat/Git-Helper.git
 cd Git-Helper
 cargo build
 cargo test
-License
+```
+
+## License
+
 MIT OR Apache-2.0

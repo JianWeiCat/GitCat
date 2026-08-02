@@ -19,3 +19,7 @@ Thumbs.db
 *.dylib
 *.dll
 *.exe
+
+# Frontend build artifacts
+git-helper-ui/node_modules/
+git-helper-ui/dist/
