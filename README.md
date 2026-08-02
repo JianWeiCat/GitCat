@@ -1,10 +1,10 @@
-# Git Helper 
+# GitCat
 
 纯 Rust 单二进制、跨平台本地 Git 仓库增强工具箱 —— 一行命令搞定统计、批量、清理、报表。
 
-## 为什么要用 Git Helper？
+## 为什么要用 GitCat？
 
-| 日常痛点 | Git Helper 方案 |
+| 日常痛点 | GitCat 方案 |
 |---------|---------------|
 | 手动 `git log` 拼统计，周报难写 | 一键统计 + Markdown/CSV 导出 |
 | 逐个仓库 `cd && git pull` | 扫描目录并发执行 |
